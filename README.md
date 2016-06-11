@@ -6,12 +6,12 @@
 
 >!!!已删除安装插件时设置 URL_SCHEME 的功能, 请自行到 iOS 工程中添加.
 
-#### 仅包含支付宝和微信支付的插件
+#### 仅包含支付宝和微信支付的插件,fork https://github.com/TongChia/cordova-plugin-pingpp.git
 
 install form github
 
 ```sh
-$ cordova plugin add https://github.com/TongChia/cordova-plugin-pingpp.git
+$ cordova plugin add https://github.com/djheart0710/cordova-plugin-pingpp
 ```
 
 #### 包含百度钱包/银联支付/ApplePay
