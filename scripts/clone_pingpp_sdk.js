@@ -18,7 +18,7 @@ module.exports = function(ctx) {
 
     shell.echo(style.cyan.open + 'Cloning ping++ ' + platform + ' SDK, Please wait...' + style.cyan.close);
 
-    shell.exec(['git', 'clone', sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
+    shell.exec(['sudo git', 'clone', sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
       ? d.resolve()
       : d.reject('Clone ' + platform + ' SDK failed!');
   }
