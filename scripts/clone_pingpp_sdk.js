@@ -10,7 +10,7 @@ module.exports = function(ctx) {
     , style = r('ansi-styles')
     , platform = ctx.opts.plugin.platform
     , sdk_path = path.join(ctx.opts.plugin.dir, 'sdk', platform)
-    , android_sdk_url = 'https://github.com/djheart0710/pingpp-android-2.1.1.git'
+    , android_sdk_url = 'https://github.com/djheart0710/pingpp-android-2.1.2.git'
     , ios_sdk_url = 'https://github.com/djheart0710/pingpp-ios.git'
 
   if (shell.test('-e', sdk_path)) { d.resolve(); }
