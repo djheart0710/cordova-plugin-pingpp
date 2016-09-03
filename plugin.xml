@@ -10,7 +10,7 @@
     <keywords>pingpp,pingxx,ping++,pingppone,alipay,weixin,bdwallet,unionpay,applepay</keywords>
     <license>Apache 2.0</license>
     <engines>
-        <engine name="cordova" version=">=5.0.0"/>
+        <engine name="cordova" version=">=4.0.0"/>
     </engines>
     <js-module src="www/pingpp.js" name="pingpp">
         <clobbers target="pingpp" />
