@@ -20,12 +20,12 @@ module.exports = function(ctx) {
     shell.echo(style.cyan.open + 'Cloning ping++ ' + platform + ' SDK, Please wait...' + style.cyan.close);
 
     if(platform == 'android'){
-      shell.exec(['git', 'clone', android_sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
+      shell.exec(['sudo git', 'clone', android_sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
       ? d.resolve()
       : d.reject('Clone ' + platform + ' SDK failed!');
     }
     else {
-      shell.exec(['git', 'clone', ios_sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
+      shell.exec(['sudo git', 'clone', ios_sdk_url, sdk_path].join(' '), {stdio: 'inherit'}).code == 0
       ? d.resolve()
       : d.reject('Clone ' + platform + ' SDK failed!');
     }
